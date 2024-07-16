@@ -5,7 +5,6 @@ import "./Menu.scss"
 const Menu = () => {
     return (
         <div className="menu--compoent">
-            <h4>Protocolos</h4>
             <div className="menu--icons">
                 <Link className="icon">IPV4</Link>
                 <Link className="icon">ARP</Link>
