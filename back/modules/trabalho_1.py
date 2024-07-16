@@ -67,9 +67,9 @@ matriz_top_5_arp = []
 for (ip, mac), freq in top_5_arp:
     matriz_top_5_arp.append([ip, mac, freq])
 
-print("\nMatriz de Dados (ordenada por frequência decrescente):")
-for row in matriz_top_5_arp:
-    print(row)
+#print("\nMatriz de Dados (ordenada por frequência decrescente):")
+#for row in matriz_top_5_arp:
+    #print(row)
 
 
 # RIP
@@ -108,7 +108,7 @@ arquivo_pcap = "./Data/rip.pcap"
 tabelas_rotas = extrair_tabelas_roteamento(arquivo_pcap)
 
 # Impressão dos resultados
-print(tabelas_rotas)
+#print(tabelas_rotas)
 
 
 
@@ -156,8 +156,8 @@ for porta1, repeticao in portas:
         if(porta1 == porta2):
             top_nome_portas.append([nome_porta, repeticao])
 
-for row in top_nome_portas:
-    print(row)
+#for row in top_nome_portas:
+   # print(row)
 
 
 
@@ -192,8 +192,8 @@ formatted_tcp_data = np.array([[f"{row[0]:.2f}", int(row[1])] for row in data_ma
 numeric_tcp_data = [[float(row[0]), int(row[1])] for row in formatted_tcp_data]
 
 # Exibir o novo vetor
-print("Vetor numérico de Tempo e Contagem:")
-print(numeric_tcp_data)
+#print("Vetor numérico de Tempo e Contagem:")
+#print(numeric_tcp_data)
 
 
 
@@ -222,7 +222,7 @@ for pkt in packets:
 http_methods_list = [[method, http_methods_counter.get(method, 0)] for method in http_methods_possible]
 
 # Exibir a lista de métodos HTTP
-print("Métodos HTTP:", http_methods_list)
+#print("Métodos HTTP:", http_methods_list)
 
 
 # DNS
@@ -247,7 +247,7 @@ def extract_dns_queries(file_name):
 arquivo_dns = "./Data/dns.pcap"
 dns_queries = extract_dns_queries(arquivo_dns)
 
-print(dns_queries)
+#print(dns_queries)
 
 
 
@@ -299,4 +299,4 @@ def contar_snmp_pdu(pcap_file):
 # Exemplo de uso
 pcap_file = "./Data/snmp.pcap"
 snmp_dpus = contar_snmp_pdu(pcap_file)
-print(snmp_dpus)
+#print(snmp_dpus)

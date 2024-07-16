@@ -145,8 +145,6 @@ const initCharts = async () => {
     ],
   };
 
-  
-
   const opcoesChart5 = {
     tooltip: {
       trigger: 'item'
@@ -312,8 +310,6 @@ const initCharts = async () => {
       },
     ],
   };
-
-  
 
   chart1.setOption(opcoesChart1);
   chart2.setOption(opcoesChart2);
