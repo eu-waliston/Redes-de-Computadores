@@ -1,0 +1,4 @@
+fastapi
+flask
+flask_cors
+scapy
