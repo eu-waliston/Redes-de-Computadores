@@ -14,7 +14,10 @@ from flask import Flask, jsonify
 from datetime import datetime
 
 
-
+@app.route('/',  methods =["GET", "POST"])
+@cross_origin
+def home():
+    return render_template("./templates/index.html")
 
 @app.route('/api/origem/data')
 @cross_origin()
